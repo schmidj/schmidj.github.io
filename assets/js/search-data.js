@@ -435,11 +435,16 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
+      },{id: "books-introduction-to-machine-learning-with-python-a-guide-for-data-scientists",
+          title: 'Introduction to Machine Learning with Python: A Guide for Data Scientists',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
+              window.location.href = "/books/Introduction_to_ML_Python/";
+            },},{id: "books-the-one-thing-the-surprisingly-simple-truth-behind-extraordinary-results",
+          title: 'The One Thing: The Surprisingly Simple Truth Behind Extraordinary Results',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_One_Thing/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
