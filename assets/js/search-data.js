@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -458,7 +458,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-customer-retention-analysis",
           title: 'Customer Retention Analysis',
-          description: "Tools: Python",
+          description: "Methods: Logistic Regression, XGBoostTools: Python",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-air-passenger-analysis",
@@ -478,7 +478,7 @@ ninja.data = [{
               window.location.href = "/projects/4_project/";
             },},{id: "projects-gender-analysis-in-recreational-fishing",
           title: 'Gender analysis In Recreational Fishing',
-          description: "Tools: Python",
+          description: "Methods: Ch-Square tests, Bayesian NetworksTools: Python",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{id: "projects-spatiotemporal-prediction-of-fishing-activity",
