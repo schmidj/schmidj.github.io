@@ -451,34 +451,34 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-customer-retention-analysis",
+          title: 'Customer Retention Analysis',
+          description: "Tools: Python",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-air-passenger-analysis",
+          title: 'Air Passenger Analysis',
+          description: "Tools: Power BI, Python",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-metafinder-ai-rag-based-metadata-extraction-tool",
+          title: 'Metafinder AI – RAG-Based Metadata Extraction Tool',
+          description: "Tools: Python, ...",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-salmon-returns-prediction-using-machine-learning",
+          title: 'Salmon Returns Prediction Using Machine Learning',
+          description: "Tools: Python",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-gender-analysis-in-recreational-fishing",
+          title: 'Gender analysis In Recreational Fishing',
+          description: "Tools: Python",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+            },},{id: "projects-spatiotemporal-prediction-of-fishing-activity",
+          title: 'Spatiotemporal Prediction Of Fishing Activity',
+          description: "Tools: Python",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
             },},{id: "projects-project-7",
