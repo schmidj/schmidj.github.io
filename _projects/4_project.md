@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: Salmon Returns Prediction Using Machine Learning
+description: "Tools: Python"
 img:
 importance: 3
 category: fun
