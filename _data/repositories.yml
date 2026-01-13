@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - schmidj
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - schmidj/PredictSalmonRuns
+  - schmidj/PredictingAnglerActivityOntario
+  - schmidj/Air-Passengers-PowerBI
+  - schmidj/Retention_Analysis
+  - schmidj/Tabalizer
