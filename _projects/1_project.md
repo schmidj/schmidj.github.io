@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Customer Retention Analysis
-description: "Tools: Python"
-img: assets/img/12.jpg
+description: "Methods: <b>Logistic Regression, XGBoost</b><br>Tools: <b>Python</b>"
+
+img: assets/img/Project_Retention_Analysis.png
 importance: 1
-category: work
+category: self-learning
 related_publications: true
 ---
 

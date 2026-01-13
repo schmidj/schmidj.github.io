@@ -2,7 +2,7 @@
 layout: page
 title: Spatiotemporal Prediction Of Fishing Activity
 description: "Tools: Python"
-img:
+img: assets/img/Project_Predict_FishingActivity.png
 importance: 3
 category: work
 ---

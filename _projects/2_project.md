@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Air Passenger Analysis
-description: "Tools: Power BI, Python"
-img: assets/img/3.jpg
+description: "Tools: <b>Power BI, Python</b>"
+img: assets/img/Project_Air_Passengers.png
 importance: 2
-category: work
+category: self-learning
 giscus_comments: true
 ---
 

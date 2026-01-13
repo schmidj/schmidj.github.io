@@ -2,7 +2,7 @@
 layout: page
 title: Metafinder AI – RAG-Based Metadata Extraction Tool
 description: "Tools: Python, ..."
-img: assets/img/7.jpg
+img: assets/img/Project_MetaFinderAI.png
 redirect: https://unsplash.com
 importance: 3
 category: fun

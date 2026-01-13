@@ -2,7 +2,7 @@
 layout: page
 title: Salmon Returns Prediction Using Machine Learning
 description: "Tools: Python"
-img:
+img: assets/img/Project_SalmonReturns.png
 importance: 3
 category: fun
 ---
