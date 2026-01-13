@@ -37,12 +37,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "nav-cv",
-          title: "cv",
+        },{id: "nav-resume",
+          title: "resume",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/resume/";
           },
         },{id: "nav-teaching",
           title: "teaching",
@@ -445,16 +445,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/The_One_Thing/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+            },},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-i-started-builidng-my-portfolio-smile",
+          title: 'I started builidng my portfolio! :smile:',
           description: "",
           section: "News",},{id: "projects-customer-retention-analysis",
           title: 'Customer Retention Analysis',
@@ -513,7 +513,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%6A%75%6C.%73.%73%63%68%6D%69%64@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-inspire',
@@ -541,7 +541,7 @@ ninja.data = [{
         title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://schmidj.github.io", "_blank");
         },
       },{
       id: 'light-theme',
