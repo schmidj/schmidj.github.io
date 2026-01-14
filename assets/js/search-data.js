@@ -457,7 +457,7 @@ ninja.data = [{
               window.location.href = "/projects/4_project/";
             },},{id: "projects-gender-analysis-in-recreational-fishing",
           title: 'Gender analysis In Recreational Fishing',
-          description: "Methods: Ch-Square tests, Bayesian NetworksTools: Python",
+          description: "Methods: Chi-Square tests, Bayesian NetworksTools: Python",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{id: "projects-spatiotemporal-prediction-of-fishing-activity",
