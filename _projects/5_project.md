@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Gender analysis In Recreational Fishing
-description: "Methods: <b>Ch-Square tests, Bayesian Networks</b><br>Tools: <b>Python</b>"
+description: "Methods: <b>Chi-Square tests, Bayesian Networks</b><br>Tools: <b>Python</b>"
 img: assets/img/Project_GenderAnalysis_FishingActivity.png
 importance: 3
 category: work
