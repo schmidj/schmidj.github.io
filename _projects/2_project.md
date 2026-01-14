@@ -8,74 +8,114 @@ category: self-learning
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## 1. Project overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+This project explores global air passenger trends using [World Bank data](https://data.worldbank.org/indicator/IS.AIR.PSGR?end=2021&start=1970&view=chart) and visualizes key insights in an interactive Power BI dashboard.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Screenshot_Dashboard_AirPassengers.png" title="Dashboard example" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    An example screenshot of the dashboard.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+It consists of two main components:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+`eda_preprocessing_powerbi.ipynb`: A Jupyter Notebook for exploratory data analysis (EDA) and preprocessing.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+`Air_Passengers.pbix`: A Power BI Desktop report built on the cleaned dataset, including timeline, bar charts, and a geographic map.
 
-{% raw %}
+## 2. Concept Overview
+Python: EDA
+Power Query, DAX, Filtering in Power BI...
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+## 3. Data Overview & Preparation
 
-{% endraw %}
+All raw data comes from the World Bank Open Data indicator:
+
+Air transport, passengers carried (IS.AIR.PSGR), 
+International Civil Aviation Organization (ICAO),
+[https://data.worldbank.org/indicator/IS.AIR.PSGR](https://data.worldbank.org/indicator/IS.AIR.PSGR)
+
+The project uses three CSV files provided by the World Bank:
+
+* Main table: API_IS.AIR.PSGR_DS2_en_csv_v2_294362.csv
+* Country metadata: Metadata_Country_API_IS.AIR.PSGR_DS2_en_csv_v2_294362.csv
+* Indicator metadata: Metadata_Indicator_API_IS.AIR.PSGR_DS2_en_csv_v2_294362.csv
+
+## 4. Application
+
+The repository of the project can be found [here](https://github.com/schmidj/Air-Passengers-PowerBI).
+
+### 1. Exploratory Data Analysis & Preprocessing
+
+`eda_preprocessing_powerbi.ipynb`
+
+This notebook performs data loading, cleaning, and validation to prepare the dataset for visualization.
+
+Key processing steps:
+
+1. Load and inspect data
+* Read main passenger table and metadata files.
+* Inspect dimensions, missing values, duplicates, and unique-value counts.
+* Detect and remove invalid aggregations (e.g., regional summaries such as AFW, LAC, WLD).
+
+2. Keep only true country-level data
+* Rows representing aggregated regions are removed by checking Region values in the metadata table.
+
+3. Validate totals
+* A consistency check compares the row with aggregated World values vs. the sum of all country values. Differences are printed and visualized.
+
+4. Export cleaned data
+* The final preprocessed data is saved as `API_IS.AIR.PSGR_DS2_en_csv_v2_294362_clean.csv` and `Metadata_Country_API_IS.AIR.PSGR_DS2_en_csv_v2_294362_clean.csv`.
+* These files are used directly in Power BI.
+
+### 2. Power BI Dashboard
+
+`Air_Passengers.pbix`
+
+The dashboard provides an interactive exploration of global air passenger trends over time and across countries.
+
+#### Main visuals included:
+
+1. Timeline Line Chart
+* Displays the evolution of air passengers over time.
+* Dynamically responds to selections in Region, Country and time slider.
+
+2. Bar Charts
+* Two bar charts compare passenger numbers of the first selected year and the last selected year.
+* These charts show the distribution of passengers across countries for the selected years.
+* Country selection does NOT affect the bar charts → filter paths were adjusted (deactivated) so bar charts only respond to year-based and Region filters.
+
+3. Geographic Map
+* Displays the selected region or country on the world map.
+* Allows intuitive spatial exploration.
+
+#### Power Query Work
+
+In Power Query, several transformations were applied:
+* Unpivoting year columns to create a long-format table.
+* Setting correct data types (text, numeric, date).
+* Creating clean categorical fields for Countries, Regions, Years.
+* Removing unnecessary columns.
+* Ensuring temporal and spatial fields behave as proper hierarchies in Power BI.
+
+#### Power BI Desktop Work
+
+In Power BI Desktop, additional modeling and calculation steps were performed:
+
+* Creating additional tables, including a Year_Slicer table used for selecting Start and End Years.
+* Building custom DAX measures for:
+* Bar charts showing Passengers in Start Year and Passengers in End Year.
+* Dynamic card titles that display the currently selected years.
+* Dynamic card values that calculate the total number of passengers for the selected start and end year.
+* Designing the dashboard layout with interactive slicers, bar charts, and cards.
+* Applying formatting to ensure visuals update automatically based on user selections (e.g., dynamic highlighting of selected countries or years).
+
+
+## 5. Analysing The Results
+
+## 6. Growth & Next Steps
+Explain what would you do to improve this, or what you would do if you had more time!
