@@ -21,6 +21,8 @@ This project explores global air passenger trends using [World Bank data](https:
     An example screenshot of the dashboard.
 </div>
 
+The repository of the project can be found [here](https://github.com/schmidj/Air-Passengers-PowerBI).
+
 It consists of two main components:
 
 `eda_preprocessing_powerbi.ipynb`: A Jupyter Notebook for exploratory data analysis (EDA) and preprocessing.
@@ -45,11 +47,7 @@ The project uses three CSV files provided by the World Bank:
 * Country metadata: Metadata_Country_API_IS.AIR.PSGR_DS2_en_csv_v2_294362.csv
 * Indicator metadata: Metadata_Indicator_API_IS.AIR.PSGR_DS2_en_csv_v2_294362.csv
 
-## 4. Application
-
-The repository of the project can be found [here](https://github.com/schmidj/Air-Passengers-PowerBI).
-
-### 1. Exploratory Data Analysis & Preprocessing
+### Exploratory Data Analysis & Preprocessing
 
 `eda_preprocessing_powerbi.ipynb`
 
@@ -72,7 +70,9 @@ Key processing steps:
 * The final preprocessed data is saved as `API_IS.AIR.PSGR_DS2_en_csv_v2_294362_clean.csv` and `Metadata_Country_API_IS.AIR.PSGR_DS2_en_csv_v2_294362_clean.csv`.
 * These files are used directly in Power BI.
 
-### 2. Power BI Dashboard
+## 4. Application
+
+### Power BI Dashboard
 
 `Air_Passengers.pbix`
 
