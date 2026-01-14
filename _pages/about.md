@@ -7,21 +7,21 @@ subtitle: Data Scientist - Applied Mathematics - Machine learning - AI - Environ
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>V6T 1B4 Vancouver, BC</p>
     <p>Canada</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -32,7 +32,7 @@ Now I'm transitioning to industry, where I'm eager to apply these skills to solv
 
 When I'm not working, you'll find me hiking, traveling, cooking, or playing music.
 
-I'm open to data science roles, collaborative projects, or connecting with others in the field!
+I'm open to data analysis or data science roles, collaborative projects, or connecting with others in the field!
 
 Contact me on [LinkedIn](https://www.linkedin.com/in/julia-schmid-5a6806b1/) or send me an [email](mailto:jul.s.schmid@gmail.com).
 
